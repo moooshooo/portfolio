@@ -7,9 +7,6 @@ Project Name: Portfolio
 
 
 
-
-
-
 //Funktion som hämtar sista push av denna repo källa: ChatPGT
 async function getLastPush() {
     const response = await fetch("https://api.github.com/repos/moooshooo/portfolio/");

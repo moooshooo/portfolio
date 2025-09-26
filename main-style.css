@@ -19,10 +19,14 @@ body {
 
 header {
     min-height: 200px;
-    background-color: #333;
     display: flex;
     justify-content: end;
     align-items: center;
+
+background-color: rgb(0, 37, 75); 
+/* Svart overlay med prickar */
+background-image: radial-gradient(rgba(11, 63, 106, 0.7) 1px, transparent 1px);
+background-size: 3px 3px; 
 }
 
 #menu {
@@ -39,7 +43,9 @@ nav li a {
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
-    text-decoration: none;
+    text-decoration: none;/* 
+    border: 1px solid #3a3a3a; */
+    clip-path: ellipse();
 }
 nav li a:hover {
     background-color: #555;
@@ -51,14 +57,12 @@ display: flex;
 justify-content: center;
 align-items: center;
 height: 200px;
-background-color: #FFF; 
-/* Svart overlay med prickar */
-    background-image: radial-gradient(rgba(126, 126, 126, 0.7) 1px, transparent 1px);
-    background-size: 3px 3px; 
+    background-color: #1c1c1c;
 }
 
 .hero h1{
     font-size: 40px;
+    color: #EEE;
 }
 
 h3 {
@@ -75,4 +79,19 @@ footer {
 
 #copyright {
 
+}
+.red {
+    color: red;
+}
+.yellow {
+    color: yellow;
+}
+.blue {
+    color: lightskyblue;
+}
+.purple {
+    color: purple;
+}
+.orange {
+    color: orange;
 }
