@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mos Miniräknare</title>
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+   
+    <div id="container">
+      <div id="calculator">
+        <div id="Display">0</div>
+        <div id="btnS">
+          <div id="btnSrow">
+            <div class="row">
+              <button class="btn btnInput" id="divided" value="/">/</button>
+              <button class="btn btnInput" id="percent" value="%">%</button>
+              <button class="btn" id="ac" value="">AC</button>
+              <button class="btn" id="back" value="erase">&#x1F519;</button>
+            </div>
+            <div class="row">
+              <button class="btn btnInput" id="multiplication" value="*">*</button>
+              <button class="btn btnInput" id="9" value="9">9</button>
+              <button class="btn btnInput" id="8" value="8">8</button>
+              <button class="btn btnInput" id="7" value="7">7</button>
+            </div>
+            <div class="row">
+              <button class="btn btnInput" id="minus" value="-">-</button>
+              <button class="btn btnInput" id="6" value="6">6</button>
+              <button class="btn btnInput" id="5" value="5">5</button>
+              <button class="btn btnInput" id="4" value="4">4</button>
+            </div>
+            <div class="row">
+              <button class="btn btnInput" id="plus" value="+">+</button>
+              <button class="btn btnInput" id="3" value="3">3</button>
+              <button class="btn btnInput" id="2" value="2">2</button>
+              <button class="btn btnInput" id="1" value="1">1</button>
+            </div>
+            <div class="row">
+              <button class="btn" id="resultBtn" value="=">=</button>
+              <button class="btn btnInput" id="comma" value=",">,</button>
+              <button class="btn btnInput" id="zero" value="0">0</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p id="powered">
+
+         <span id="lastUpdated"></span><br/> 
+        Powered - by <a href="http://www.moshos.se/" target="_blank">Mos</a> <br/> Version 0.6 
+        <!-- <span id="dateStamp">2025-09-</span> -->
+
+         <span id="lastUpdated"></span><br/>
+          <button id="darkM">🌙 Dark mode</button>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

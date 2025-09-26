@@ -1,0 +1,124 @@
+/* 
+Author: Mos
+Date: 2025-09-24
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Bitcount+Single+Ink&display=swap');
+
+* {
+    margin: 0;
+    /* border: solid 1px red; */
+}
+
+body {
+    font-family: "Bitcount Single Ink", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0,
+        "SZP1" 0,
+        "SZP2" 0,
+        "XPN1" 0,
+        "XPN2" 0,
+        "YPN1" 0,
+        "YPN2" 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #eee;
+}
+
+.container {
+    background-color: #ccc;
+    padding: 50px;
+    border-radius: 15px;box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.63);
+}
+
+.input-section{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 15px;
+    padding: 20px;
+}
+
+#inputField {
+    flex: 3;
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    text-align: left;
+    box-shadow: 1px 1px 5px 4px rgba(0,0,0,0.15) inset;
+    padding: 5px 15px;
+}
+
+.addBtn {
+    flex: 1;
+    border-radius: 50%;
+    border: 3px solid #999;
+    height: 50px;
+    background-color: greenyellow;
+    box-shadow: 1px 3px 3px 0px rgba(133, 133, 133, 0.63);
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #aaa;
+    height: 50px;
+    background-color: greenyellow;
+    box-shadow: 1px 3px 3px 0px rgba(99, 99, 99, 0.63);
+}
+
+.addBtn:active {
+    border: 3px solid #cfcfcf;
+}
+
+/* ================================
+   ===  List Styling  ===
+================================ */
+.listItem{
+    margin: 5px;
+    list-style: none;
+}
+.listItemContainer{
+    display: flex;
+    justify-content: space-between;
+    border: 1px dotted rgb(181, 181, 181);
+    border-radius: 5px;
+    background-color: #eee;
+    margin: 5px;
+    padding: 8px 20px;
+}
+.textP{
+    flex: 4;
+    margin: 4px;
+}
+.deleteBtn{
+    flex: 1;
+    border-radius: 20px;
+    border: 2px solid #999;
+    height: 20px;
+    background-color: red;
+    box-shadow: 1px 3px 3px 0px rgba(133, 133, 133, 0.63);
+    font-size: 8px;
+    color: #fff;
+    margin: 4px;
+}
+.deleteBtn:hover{
+    cursor: pointer;
+    box-shadow: 1px 3px 3px 0px rgba(88, 88, 88, 0.63);
+    font-size: 8px;
+    color: #eee;
+}
+.deleteBtn:active{
+    cursor: pointer;
+}

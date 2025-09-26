@@ -1,0 +1,99 @@
+/* 
+Author: Mos
+Date: 2025-09-25
+Version: 0.6
+Project Name: Miniräknare
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
+* {
+    margin: 0;/* 
+    border: solid 1px red; */
+}
+
+body {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    transition: all 0.3s;
+}
+body.darkMcss {
+  background: #444;
+  color: white;
+}
+#container{
+}
+
+#calculator {
+    background-color: #111;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.6);
+}
+#Display {
+    background-color: #d2d2d2;
+    height: 50px;
+    margin: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    overflow: hidden;
+    width: 230px;
+    border: 2px solid #acacac;
+    box-shadow: -1px 1px 14px 0px rgba(0,0,0,0.75) inset;
+    /* Svart overlay med prickar */
+    background-image: radial-gradient(rgba(126, 126, 126, 0.7) 1px, transparent 1px);
+    background-size: 3px 3px; 
+}
+#btnSrow {
+    margin: 50px 5px 5px;
+}
+.row {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    gap: 8px;
+    margin: 10px;
+}
+
+.btn {
+    width: 60px;
+    height: 60px;
+    background-color: #2e2e2e;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: circle();
+    color: #EEE;
+    cursor: pointer;
+}
+#zero {
+    width: 120px;
+    clip-path:none;
+    border-radius: 25px;
+}
+#resultbtn, #plus, #minus, #multiplication, #divided {
+    background-color: #ff8800;
+    cursor: pointer;
+}
+#percent, #ac, #back{
+    background-color: #888;
+}
+#powered {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 10px;
+}
+
+#lastUpdated {
+    font-size: 10px;
+    text-align: center;
+}
