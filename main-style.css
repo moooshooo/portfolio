@@ -26,7 +26,7 @@ header {
     min-width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 3px solid #000;
-    position: fixed;
+    position: absolute;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -45,7 +45,7 @@ header {
     border-bottom: 3px solid #000;
 }
 nav li a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #EEE;
     background-color: #000;
     height: 1.8em;
@@ -68,25 +68,28 @@ nav li a:current {
 
 .hero{
     width: 100%;
-    min-height: 60vh;
+    height: 50vh;
     background-color: #1c1c1c;
     padding: 1em;
     background-image: radial-gradient(rgba(50, 51, 52, 0.7) 1px, transparent 1px);
     background-size: 4px 4px;
     box-shadow: 0px 5px 45px 0px rgba(0,0,0,0.75) inset;
-    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 .hero h1{
-    font-size: 1.8em;
+    font-size: 1.4em;
     color: #EEE;
 }
-.workSection {
+#workSection {
     position: relative;
-    z-index: 100;
+    z-index: 10;
     background: #eee;
     padding: 2em;
-    margin-top: 10vh; 
+    margin-top: 0vh;  
     min-height: 200vh; 
 }
 
