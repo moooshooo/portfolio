@@ -7,29 +7,32 @@ Project Name: Portfolio
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
 
-
 body {
     font-family: "Cabin Sketch", sans-serif;
     font-weight: 400;
     font-style: normal;
     min-height: 100vh;
     min-width: 100vh;
-    background-color: #eee;
     transition: all 0.3s;
+    top: 0;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 9vh;
+    height: 10vh;
     min-width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
     border-bottom: 3px solid #000;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
 }
 #logo {
-    margin: 5em;
+    margin: 2em 5em;
     height: 3.5em;
     width: 3.5em;
 }
@@ -37,8 +40,8 @@ header {
     display: flex;
     justify-content: end;
     align-items: end;
-    height: 8vh;
-    margin: 0 6em;
+    height: 9vh;
+    margin: 0em 6em;
     border-bottom: 3px solid #000;
 }
 nav li a {
@@ -64,16 +67,14 @@ nav li a:current {
 }
 
 .hero{
-    display: flex;
-    justify-content: start;
+    width: 100%;
     min-height: 60vh;
-    min-width: 100%;
     background-color: #1c1c1c;
-    padding: 1em 1em;
-    /* Svart overlay med prickar */
+    padding: 1em;
     background-image: radial-gradient(rgba(50, 51, 52, 0.7) 1px, transparent 1px);
     background-size: 4px 4px;
     box-shadow: 0px 5px 45px 0px rgba(0,0,0,0.75) inset;
+    z-index: 0;
 }
 
 .hero h1{
@@ -81,6 +82,12 @@ nav li a:current {
     color: #EEE;
 }
 .workSection {
+    position: relative;
+    z-index: 100;
+    background: #eee;
+    padding: 2em;
+    margin-top: 10vh; 
+    min-height: 200vh; 
 }
 
 h3 {
