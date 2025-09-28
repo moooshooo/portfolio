@@ -1,7 +1,7 @@
 /* 
 Author: Mos
-Date: 2025-09-26
-Version: 0.1
+Date: 2025-09-28
+Version: 0.3
 Project Name: Portfolio
 */
 
@@ -19,32 +19,47 @@ body {
 }
 
 header {
-    height: 20vh;
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
-
-background-color: rgb(0, 37, 75); 
+    height: 9vh;
+    min-width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    border-bottom: 3px solid #000;
 }
-
+#logo {
+    margin: 5em;
+    height: 3.5em;
+    width: 3.5em;
+}
 #menu {
     display: flex;
-    gap: 30px;
+    justify-content: end;
+    align-items: end;
+    height: 8vh;
+    margin: 0 6em;
+    border-bottom: 3px solid #000;
 }
 nav li a {
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #EEE;
     background-color: #000;
-    height: 30px;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
+    height: 1.8em;
+    padding: 10px;
+    margin: 0;
     text-decoration: none;
-    /* border: 1px solid #3a3a3a; */
-    clip-path: ellipse();
+    border: 2px solid #232323;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* clip-path: ellipse(); */
 }
 nav li a:hover {
-    background-color: #555;
+    background-color: #222;
+    cursor: pointer;
+}
+nav li a:current {
+    background-color: #222;
     cursor: pointer;
 }
 
@@ -52,6 +67,7 @@ nav li a:hover {
     display: flex;
     justify-content: start;
     min-height: 60vh;
+    min-width: 100%;
     background-color: #1c1c1c;
     padding: 1em 1em;
     /* Svart overlay med prickar */
@@ -76,7 +92,11 @@ footer {
     color: #EEE;
     text-align: center;
     font-size: 10px;
-    min-height: 300px;
+    min-height: 20vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #copyright {

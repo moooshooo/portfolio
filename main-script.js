@@ -1,7 +1,7 @@
 /* 
 Author: Mos
-Date: 2025-09-26
-Version: 0.1
+Date: 2025-09-28
+Version: 0.3
 Project Name: Portfolio
 */
 
