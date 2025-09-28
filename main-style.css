@@ -13,12 +13,13 @@ body {
     font-weight: 400;
     font-style: normal;
     min-height: 100vh;
+    min-width: 100vh;
     background-color: #eee;
     transition: all 0.3s;
 }
 
 header {
-    min-height: 10em;
+    height: 20vh;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -38,8 +39,8 @@ nav li a {
     margin: 10px;
     padding: 20px;
     border-radius: 10px;
-    text-decoration: none;/* 
-    border: 1px solid #3a3a3a; */
+    text-decoration: none;
+    /* border: 1px solid #3a3a3a; */
     clip-path: ellipse();
 }
 nav li a:hover {
@@ -50,7 +51,7 @@ nav li a:hover {
 .hero{
     display: flex;
     justify-content: start;
-    min-height: 300px;
+    min-height: 60vh;
     background-color: #1c1c1c;
     padding: 1em 1em;
     /* Svart overlay med prickar */
@@ -62,6 +63,8 @@ nav li a:hover {
 .hero h1{
     font-size: 1.8em;
     color: #EEE;
+}
+.workSection {
 }
 
 h3 {

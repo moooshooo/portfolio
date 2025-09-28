@@ -16,7 +16,7 @@ async function getLastPush() {
     const lastPush = new Date(data.pushed_at);
 
     // Format it for display
-    document.getElementById("lastUpdated").textContent =
+    document.getElementById("portfolioLastUpdated").textContent =
         "Last push to GitHub: " + lastPush.toLocaleString("sv-SE");
 }
 
