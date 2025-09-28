@@ -12,7 +12,7 @@ body {
     font-weight: 400;
     font-style: normal;
     min-height: 100vh;
-    min-width: 100vh;
+    width: 100%;
     transition: all 0.3s;
     top: 0;
     margin: 0;
@@ -23,7 +23,7 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 10vh;
-    min-width: 100%;
+    width: 100%;
     background-color: rgba(12, 12, 12, 0.5);
     border-bottom: 3px solid #222;
     position: absolute;
@@ -78,6 +78,9 @@ nav li a:current {
     top: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    justify-content: start;
+    align-items: start;
 }
 
 .hero h1{
