@@ -85,6 +85,6 @@ changeBtn.addEventListener("click",() => {
     if (document.body.classList.toggle("darkMcss")) {
         changeBtn.textContent = "☀️ Light mode"
     }else {
-    changeBtn.textContent = "🌙 Dark mode"
+        changeBtn.textContent = "🌙 Dark mode"
   }
 })
