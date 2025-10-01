@@ -100,6 +100,35 @@ h3 {
     font-size: 30px;
     margin: 20px;
 }
+.description {
+    margin: 0px;
+    padding: 5px;
+}
+h4 {
+    margin: 0px;
+    padding: 5px;
+}
+.featuresList{
+    margin: 0px;
+    padding: 5px;
+}
+
+button{
+    background-color: #eee;
+    border: 1px solid #555;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #333;
+    font-size: 1em;
+}
+
+button:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
 footer {
     background-color: #333;
     color: #EEE;
